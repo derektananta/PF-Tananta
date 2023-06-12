@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap');
+
+/* Reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Carrois Gothic', sans-serif;
+    overflow-y: auto;
+    background-color: rgb(0, 0, 0);
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    z-index: -1;
+    }
+    
+    .footer-txt {
+    margin: 20px;
+    text-align: center;
+    font-size: 17px;
+    }
+
+/* Barra de navegacion mobile - bootstrap */
+
+.logo-web {
+    height: 65px;
+    border-radius: 40%;
+    box-shadow: 5px 3px 11px 0px #ccc92b;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+
+}
+
+.navbar-toggler-icon {
+    background-size: 200%;
+    background-image: url(../assets/img/fondo-web.png)
+}
+
+.navbar-collapse {
+    width: 100vh;
+    height: 100vh;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.container-fluid {
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar {
+    padding: 0;
+}
+
+.nav-link {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ccc92b;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.bg-body-tertiary {
+    opacity: 2;
+}
+
+/* home - mobile */
+.home {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: antiquewhite;
+}
+.home .div1 {
+    padding: 10px;
+    border: 2px solid #ccc92b;
+    margin: 1%;
+}
+.home .div2 {
+    padding: 10px;
+    border: 2px solid #ccc92b;
+    margin: 1%;
+}
+.home .div3 {
+    padding: 10px;
+    border: 2px solid #ccc92b;
+    margin: 1%;
+}
+.home .div4 {
+    padding: 10px;
+    border: 2px solid #ccc92b;
+    margin: 1%;
+}
+.home .div5 {
+    padding: 10px;
+    border: 2px solid #ccc92b;
+    margin: 1%;
+}
+/* titulos pages - mobile */
+.titulo {
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #ccc92b;
+    text-align: center;
+}
+
+
+/* sobre-mi - mobile */
+.sobre-mi {
+    margin: 30px;
+}
+
+.main-sobremi {
+    margin: 30px;
+    box-shadow: 0px 0px 20px 10px #ccc92b;
+}
+
+.main-sobremi .sobreMi .img-sobremi img {
+    width: 100%;
+    height: auto;
+}
+.main-sobremi .sobremi-reverse .img-sobremi img {
+    width: 60%;
+    height: auto;
+}
+
+.main-sobremi .sobreMi {
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    color: antiquewhite;
+    border: 1px solid #ccc92b;
+    gap: 10px;
+}
+
+.main-sobremi .sobremi-reverse {
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    color: antiquewhite;
+    border: 1px solid #ccc92b;
+    gap: 10px;
+}
+
+/* portafolio - mobile */
+
+.main-portafolio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 50px;
+    margin: 5%;
+ }
+ .main-portafolio .section-portafolio .imagen-portafolio img {
+    width: 100%;
+    height: 60%;
+ }
+ .main-portafolio .section-portafolio {
+    background-color: black;
+    color: blanchedalmond;
+    padding: 10px;
+    
+ }
+ .main-portafolio .section-portafolio:hover {
+     box-shadow: 0px 0px 16px 4px yellow;
+ }
+
+/* habilidades - mobile */
+.habilidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 60vh;
+
+    margin-top: 20%;
+}
+
+.logos-habilidades {
+    height: 70px;
+}
+
+.div-habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.texto-habilidades {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* contacto - mobile */
+
+.contacto {
+    margin: 30px;
+}
+
+label {
+    display: block;
+    margin: 8px 0;
+    font-weight: bold;
+    color: #ccc92b;
+}
+
+.formulario {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+.inputs-forms {
+    padding: 3px;
+    margin: 8px 0;
+    width: 270px;
+    border: 2px solid #ccc92b;
+    font-size: 16px;
+}
+
+.boton-forms {
+    background-color: #ccc92b;
+    color: black;
+    padding: 3px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 270px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.text-contacto {
+    padding: 6px;
+    margin: 8px 0;
+    width: 270px;
+    height: 50px;
+    border: 2px solid #ccc92b;
+    font-size: 16px;
+}
+
+.redes-sociales {
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #ccc92b;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.redes-icon {
+    position: relative;
+    width: 30px;
+    bottom: 20px;
+    margin-top: 15%;
+}
+
+.p-redes {
+    margin: 0;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+
+    position: relative;
+    bottom: 10px;
+}
+
+/* vista desktop */
+
+@media (min-width: 992px) {
+
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+
+        display: grid;
+        min-height: 100vh;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    footer {
+        position: relative;
+        padding: 1em 0;
+        z-index: -10;
+        background: rgb(0, 0, 0);
+        text-align: center;
+        height: 80px;
+
+    }
+
+    /* navbar */
+    .navbar-collapse {
+        height: auto;
+        justify-content: flex-end;
+    }
+
+    /* titulos pages - desktop */
+    .titulo {
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    /* sobre-mi*/
+    
+    .sobre-mi {
+        margin-top: 0;
+    }
+    .main-sobremi {
+        box-shadow: 0px 0px 20px 10px #ccc92b;
+    }
+    
+    .main-sobremi .sobreMi .img-sobremi img {
+        width: 100%;
+        height: auto;
+    }
+    .main-sobremi .sobremi-reverse .img-sobremi img {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-sobremi .sobreMi {
+        display: flex;
+        padding: 25px;
+        flex-direction: row;
+        gap: 50px;
+        align-items: center;
+        color: antiquewhite;
+        border: 1px solid #ccc92b;
+        gap: 10px;
+    }
+
+    .main-sobremi .sobremi-reverse {
+        display: flex;
+        padding: 25px;
+        flex-direction: row-reverse;
+        gap: 50px;
+        align-items: center;
+        color: antiquewhite;
+        border: 1px solid #ccc92b;
+        gap: 10px;
+    }
+
+
+    /* habilidades*/
+
+    .habilidades {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 60vh;
+
+        margin-top: 10px;
+    }
+
+    .texto-habilidades {
+        font-size: 20px;
+    }
+
+    /* contacto */
+
+    label {
+        display: block;
+        margin: 8px 0;
+        font-weight: bold;
+        color: #ccc92b;
+    }
+
+    .formulario {
+        width: 500px;
+        margin: 0 auto;
+      }
+    
+    .inputs-forms {
+        padding: 12px;
+        margin: 8px 0;
+        width: 500px;
+        border: 2px solid #ccc92b;
+        font-size: 16px;
+    }
+
+    .boton-forms {
+        background-color: #ccc92b;
+        color: black;
+        padding: 12px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 500px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .text-contacto {
+        padding: 12px;
+        margin: 8px 0;
+        width: 500px;
+        height: 100px;
+        border: 2px solid #ccc92b;
+        font-size: 16px;
+    }
+
+    /* redes */
+
+    .redes-sociales {
+        margin-top: 15%;
+
+        text-transform: uppercase;
+        font-size: 30px;
+        color: #ccc92b;
+        display: flex;
+        justify-content: start;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 5%;
+
+    }
+
+    .redes-icon {
+        width: 45px;
+        margin-top: 30%;
+    }
+
+    .p-redes {
+        margin: 0;
+        margin-top: 5px;
+        font-size: 17px;
+        color: white;
+        text-align: center;
+    }
+
+    /* home */
+    .home {
+        display: grid;
+        grid-template-areas: 
+        "div1 div2 div3"
+        "div1 div2 div4"
+        "div1 div5 div5";
+        gap: 10px;
+        margin-top: 2%;
+        color: antiquewhite;
+    }
+    .home .div1 {
+        grid-area: div1;
+        justify-self: flex-start;
+        align-self: flex-start;
+        border: 2px solid #ccc92b;
+        padding: 5px;
+    }
+    .home .div1 img {
+        width: auto;
+        height: 200px;
+    }
+    .home .div2 {
+        grid-area: div2;
+        align-self: flex-start;
+        border: 2px solid #ccc92b;
+        padding: 5px;
+        font-size: 20px;
+    }
+    .home .div3 {
+        grid-area: div3;
+        border: 2px solid #ccc92b;
+        padding: 5px;
+    }
+    .home .div4 {
+        grid-area: div4;
+        border: 2px solid #ccc92b;
+        padding: 5px;
+    }
+    .home .div5 {
+        grid-area: div5;
+        border: 2px solid #ccc92b;
+        padding: 5px;
+    }
+
+    /* portafolio */
+
+    .main-portafolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 50px;
+        margin: 5%;
+     }
+     .main-portafolio .section-portafolio .imagen-portafolio img {
+        width: 100%;
+        height: 80%;
+     }
+     .main-portafolio .section-portafolio {
+        background-color: black;
+        color: blanchedalmond;
+        padding: 10px;
+        
+     }
+     .main-portafolio .section-portafolio:hover {
+         box-shadow: 0px 0px 16px 4px yellow;
+     }
+    
+}
