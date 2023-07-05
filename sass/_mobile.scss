@@ -1,0 +1,242 @@
+body {
+    font-family: 'Carrois Gothic', sans-serif;
+    overflow-y: auto;
+    background-color: rgb(0, 0, 0);
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    bottom: 0%;
+    background: rgb(0, 0, 0);
+    z-index: -1;
+    .footer-txt {
+        margin: 20px;
+        text-align: center;
+        font-size: 17px;
+    }
+}
+
+/* Barra de navegacion mobile - Bootstrap */
+
+.navbar {
+    padding: 0;
+}
+.bg-body-tertiary {
+    opacity: 2;
+    .container-fluid {
+        background-color: rgb(0, 0, 0);
+        .navbar-brand {
+            .logo-web {
+                height: 65px;
+                border-radius: 40%;
+                box-shadow: 5px 3px 11px 0px #ccc92b;
+            }
+        }
+        .navbar-toggler {
+            border: 1px solid #ccc92b;
+            .navbar-toggler-icon {
+                background-size: 200%;
+                background-image: url(../assets/img/menunav.png);
+            }
+        }
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+        .navbar-collapse {
+            width: 100vh;
+            height: 100vh;
+            .navbar-nav {
+                align-items: center;
+                .nav-item {
+                    .nav-link {
+                        color: white;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-size: larger;
+                    }
+                    .nav-link.activate {
+                        color: #ccc92b;
+                    }
+                    .nav-link:hover {
+                        text-decoration: underline;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Home Mobile */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: antiquewhite;
+    .divHome {
+        @include divsHomeMobile;
+    }
+}
+
+/* Titulos Pages - mobile */
+
+.titulo {
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #ccc92b;
+    text-align: center
+}
+
+/* sobre mi - mobile */
+
+.sobre-mi {
+    margin: 30px;
+}
+
+.main-sobremi {
+    margin: 30px;
+    box-shadow: 0px 0px 20px 10px #ccc92b;
+    .sobreMi {
+        display: flex;
+        padding: 25px;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        color: antiquewhite;
+        border: 1px solid #ccc92b;
+        gap: 10px;
+        .img-sobremi img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .sobremi-reverse {
+        display: flex;
+        padding: 25px;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        color: antiquewhite;
+        border: 1px solid #ccc92b;
+        gap: 10px;
+        .img-sobremi img {
+            width: 60%;
+            height: auto;
+        }
+    }
+}
+
+/* Portafolio Mobile */
+
+.main-portafolio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 50px;
+    margin: 5%;
+    .section-portafolio {
+        background-color: black;
+        color: blanchedalmond;
+        padding: 10px;
+        .imagen-portafolio img {
+            width: 100%;
+            height: 60%;
+        }
+    }
+    .section-portafolio:hover {
+        box-shadow: 0px 0px 16px 4px yellow;
+    }
+}
+
+/* habilidades mobile */
+
+.habilidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 60vh;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    .div-habilidades {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        .logos-habilidades {
+            height: 70px;
+        }
+        .texto-habilidades {
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+}
+
+/* Contacto mobile */
+
+.contacto {
+    margin: 30px;
+    .form {
+        .formulario {
+            width: 80%;
+            margin: 0 auto;
+            label {
+                display: block;
+                margin: 8px 0;
+                font-weight: bold;
+                color: #ccc92b;
+            }
+            .inputs-forms {
+                padding: 3px;
+                margin: 8px 0;
+                width: 270px;
+                border: 2px solid #ccc92b;
+                font-size: 16px;
+            }
+            .text-contacto {
+                padding: 6px;
+                margin: 8px 0;
+                width: 270px;
+                height: 50px;
+                border: 2px solid #ccc92b;
+                font-size: 16px;
+            }
+            .boton-forms {
+                background-color: #ccc92b;
+                color: black;
+                padding: 3px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 270px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+    }
+    .redes-sociales {
+        margin-top: 50%;
+        margin-bottom: 10%;
+        text-transform: uppercase;
+        font-size: 20px;
+        color: #ccc92b;
+    }
+    .redes {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .redes-icon {
+            position: relative;
+            width: 30px;
+            bottom: 20px;
+            margin-top: 15%;
+        }
+    }
+}

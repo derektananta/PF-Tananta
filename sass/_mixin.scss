@@ -1,0 +1,10 @@
+@mixin divsHomeMobile {
+    padding: 5px;
+    border: 2px solid #ccc92b;
+    margin: 1%;
+}
+@mixin divsHomeDesktop {
+    border: 2px solid #111;
+    padding: 5px;
+    font-size: 20px;
+}
